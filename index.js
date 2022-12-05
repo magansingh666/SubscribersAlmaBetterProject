@@ -2,7 +2,7 @@ const express = require('express')
 const app = require('./src/app.js')
 const mongoose = require('mongoose')
 require('dotenv').config();
-const port = 3000
+const port = 3000 || process.env.PORT
 
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json())
