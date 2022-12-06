@@ -1,0 +1,178 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-12-06T10:06:15.863Z",
+    "end": "2022-12-06T10:06:18.683Z",
+    "duration": 2820,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9b382c98-42d7-485e-bce4-f09c35fdc66f",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e1bfd576-18de-4a07-8a11-479ca347919d",
+          "title": "testing all subscribers end point --",
+          "fullFile": "/home/magan/mern/SubscribersAlmaBetterProject/tests/test.js",
+          "file": "/tests/test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should get list of all subscribers",
+              "fullTitle": "testing all subscribers end point -- it should get list of all subscribers",
+              "timedOut": false,
+              "duration": 2428,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "request\n.get('/subscribers')    \n.expect(200, allSubscribers, done);",
+              "err": {},
+              "uuid": "11fe5ffc-4663-4878-8ab3-4c49b67c889d",
+              "parentUUID": "e1bfd576-18de-4a07-8a11-479ca347919d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "11fe5ffc-4663-4878-8ab3-4c49b67c889d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2428,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        },
+        {
+          "uuid": "c5701a4a-3098-40aa-a438-9a6a3185f450",
+          "title": "testing subscribers name end point --",
+          "fullFile": "/home/magan/mern/SubscribersAlmaBetterProject/tests/test.js",
+          "file": "/tests/test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should get names of all subscribers",
+              "fullTitle": "testing subscribers name end point -- it should get names of all subscribers",
+              "timedOut": false,
+              "duration": 178,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "request\n.get('/subscribers/names')    \n.expect(200, allSubscribersName, done);",
+              "err": {},
+              "uuid": "379c4dc0-04f4-4d77-8d17-3afb9da65269",
+              "parentUUID": "c5701a4a-3098-40aa-a438-9a6a3185f450",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "379c4dc0-04f4-4d77-8d17-3afb9da65269"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 178,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        },
+        {
+          "uuid": "f20d95ae-1c6c-4ad3-8f64-16430b312154",
+          "title": "testing subscriber detial end point  --",
+          "fullFile": "/home/magan/mern/SubscribersAlmaBetterProject/tests/test.js",
+          "file": "/tests/test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "we shoud get a subscriber object with id 638ddc1fd171af85c0fce3a9",
+              "fullTitle": "testing subscriber detial end point  -- we shoud get a subscriber object with id 638ddc1fd171af85c0fce3a9",
+              "timedOut": false,
+              "duration": 203,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "request\n.get('/subscribers/638ddc1fd171af85c0fce3a9')    \n.expect(200, subscriberObj, done);",
+              "err": {},
+              "uuid": "8deb5e0b-e654-4b9b-a0e4-bd8acd2b8e2c",
+              "parentUUID": "f20d95ae-1c6c-4ad3-8f64-16430b312154",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8deb5e0b-e654-4b9b-a0e4-bd8acd2b8e2c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 203,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
